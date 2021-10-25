@@ -82,6 +82,7 @@ const SLOT_SIZE: usize = 16384;
 const DEFAULT_RETRIES: u32 = 16;
 
 /// This is a Redis cluster client.
+#[derive(Debug)]
 pub struct Client {
     initial_nodes: Vec<ConnectionInfo>,
     retries: Option<u32>,
